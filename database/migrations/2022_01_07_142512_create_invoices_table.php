@@ -16,8 +16,7 @@ class CreateInvoicesTable extends Migration
         Schema::create('invoices', function (Blueprint $table) {
             $table->id();
             $table->string('Code');
-            $table->integer('AccountId')->unsigned();
-            $table->foreign('AccountId')->references('id')->on('accounts');
+            $table->bigInteger('AccountId')->unsigned()->nullable();
             $table->dateTime('IssuedDate');
             $table->string('ShippingAddress');
             $table->string('ShippingPhone');

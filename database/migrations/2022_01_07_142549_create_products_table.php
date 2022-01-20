@@ -20,8 +20,7 @@ class CreateProductsTable extends Migration
             $table->string('Description');
             $table->integer('Price');
             $table->integer('Stock');
-            $table->integer('ProductTypeId')->unsigned();
-            $table->foreign('ProductTypeId')->references('id')->on('product_types');
+            $table->bigInteger('ProductTypeId')->unsigned()->nullable();
             $table->string('Image');
             $table->softDeletes();
             $table->timestamps();
