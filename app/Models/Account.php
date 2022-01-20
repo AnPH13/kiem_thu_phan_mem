@@ -21,4 +21,5 @@ class Account extends Authenticatable
         'Fullname',
         'Avatar'
     ];
+    protected $table = "accounts";
 }
