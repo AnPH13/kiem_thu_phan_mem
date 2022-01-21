@@ -30,7 +30,7 @@ class AccountController extends Controller
      */
     public function create()
     {
-        //
+        return view('screen.edit');
     }
 
     /**
@@ -52,7 +52,7 @@ class AccountController extends Controller
      */
     public function show($id)
     {
-        //
+
     }
 
     /**
